@@ -25,7 +25,7 @@
 .logo {
     height: 40px;
     width: 95px;
-    background-image: url("../pics/amazon-PNG.png");
+    background-image: url("pics/amazon-PNG.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -273,7 +273,7 @@ span {
 .flag-icon {
     height: 12px;
     width: 16px;
-    background-image: url("../pics/country-logo.png");
+    background-image: url("pics/country-logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     flex-shrink: 0;
@@ -459,7 +459,7 @@ span {
 .back-image {
     height: 400px;
     width: 100%;
-    background-image: url("../pics/back-image.jpg");
+    background-image: url("pics/back-image.jpg");
     background-size: cover;
     display: flex;
     cursor: pointer;
@@ -468,7 +468,7 @@ span {
 .banner {
     height: 400px;
     width: 100%;
-    background-image: url("../pics/back-image.jpg");
+    background-image: url("pics/back-image.jpg");
     background-size: cover;
     display: flex;
     cursor: pointer;
@@ -1184,7 +1184,7 @@ footer {
 .footer-option.country .flag-icon {
     width: 20px;
     height: 14px;
-    background-image: url("../pics/country-logo.png");
+    background-image: url("pics/country-logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: 8px;
