@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="sheet.css">
+</head>
+
+<body>
+    <!-- ========== HEADER SECTION ========== -->
+    <header>
+        <!-- ===== NAVBAR ===== -->
+        <div class="navbar" id="navbar-top">
+
+            <!-- Logo -->
+            <div class="nav-logo border">
+                <a href="/index.html">
+                    <div class="logo"></div>
+                </a>
+            </div>
+
+            <!-- Address Selector -->
+            <div class="nav-address border">
+                <a href="/address.html">
+                    <div class="address-header">
+                        <p>Deliver to</p>
+                    </div>
+                    <div class="address-location">
+                        <div class="address-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="address-place">
+                            <span>Pakistan</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="nav-search border-style">
+                <select name="category" id="search-options" class="search-category">
+                    <option selected>All</option>
+                    <option value="all">All Departments</option>
+                    <option value="arts">Arts & Crafts</option>
+                    <option value="automotive">Automotive</option>
+                    <option value="baby">Baby</option>
+                    <option value="beauty">Beauty & Personal Care</option>
+                    <option value="books">Books</option>
+                    <option value="computers">Computers</option>
+                    <option value="deals">Deals</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="home">Home & Kitchen</option>
+                    <option value="industrial">Industrial & Scientific</option>
+                    <option value="luggage">Luggage</option>
+                    <option value="movies">Movies & TV</option>
+                    <option value="music">Music, CDs & Vinyl</option>
+                    <option value="pets">Pet Supplies</option>
+                    <option value="software">Software</option>
+                    <option value="sports">Sports & Outdoors</option>
+                    <option value="tools">Tools & Home Improvement</option>
+                    <option value="toys">Toys & Games</option>
+                    <option value="video-games">Video Games</option>
+                </select>
+
+                <input type="text" class="search-input" placeholder="Search Amazon">
+
+                <div class="search-icon">
+                    <a href="">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Country Selector -->
+            <div class="nav-country">
+                <a href="https://www.amazon.com/customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang_ais">
+                    <div class="country border">
+                        <div class="flag-icon"></div>
+                        <div class="country-name"><span>PK</span></div>
+                    </div>
+                </a>
+                <div class="dropdown-arrow"><i class="fa-solid fa-caret-down"></i></div>
+            </div>
+
+            <!-- Sign In -->
+            <div class="nav-signin">
+                <a href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">
+                    <div class="account border">
+                        <div>
+                            <p>Hello, sign-in</p>
+                            <span>Account & Lists</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="dropdown-arrow"><i class="fa-solid fa-caret-down"></i></div>
+            </div>
+
+            <!-- Orders -->
+            <div class="nav-orders">
+                <a href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-orders%2Forders%3F_encoding%3DUTF8%26ref_%3Dnav_orders_first&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_retail_yourorders_us&openid.mode=checkid_setup&language=en_US&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">
+                    <div class="orders border">
+                        <div>
+                            <p>Returns</p>
+                            <span>& Orders</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Shopping Cart -->
+            <div class="nav-cart-wrapper">
+                <a href="https://www.amazon.com/gp/cart/view.html?ref_=nav_cart">
+                    <div class="nav-cart border">
+                        <div class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="cart-name"><span>Cart</span></div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- ===== SHOP MENU ===== -->
+        <div class="nav-shop">
+            <a href="#" class="all-menu border">
+                <i class="fa-solid fa-bars"></i>
+                <span>All</span>
+            </a>
+
+            <div class="border"><a href="#">Today's Deals</a></div>
+            <div class="border"><a href="#">Registry</a></div>
+            <div class="border"><a href="#">Prime video</a></div>
+            <div class="border"><a href="#">Gift Cards</a></div>
+            <div class="border"><a href="#">Customer Service</a></div>
+            <div class="border"><a href="#">Sell</a></div>
+        </div>
+
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+        <!-- ===== BANNER ===== -->
+        <div class="banner">
+            <div class="banner-text">
+                You are on amazon.com. You can also shop on Amazon UK for millions of products with
+                fast local delivery.
+                <a href="https://www.amazon.de/?ref=aisgw_intl_stripe_de">
+                    Click here to go to amazon.co.uk
+                </a>
+            </div>
+        </div>
+
+        <!-- ===== SHOP MENU SECTION 1 ===== -->
+        <div class="shop-menu">
+            <div class="product-box">
+                <div class="box-title">
+                    <h2>Get your game on</h2>
+                </div>
+                <div class="box-content">
+                    <a href="#">
+                        <div class="box-image" style="background-image: url(pics/box-1.jpg);"></div>
+                        <div class="box-link">
+                            <p>Shop gaming</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="box-title">
+                    <h2>Shop for your home essentials</h2>
+                </div>
+                <div class="box-content">
+                    <a href="#">
+                        <div class="box-grid">
+                            <div class="grid-row">
+                                <div class="grid-item">
+                                    <div class="grid-image" style="background-image: url(pics/box-2-1.jpg);"></div>
+                                    <p>Cleaning Tools</p>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="grid-image" style="background-image: url(pics/box-2-2.jpg);"></div>
+                                    <p>Home Storage</p>
+                                </div>
+                            </div>
+                            <div class="grid-row">
+                                <div class="grid-item">
+                                    <div class="grid-image" style="background-image: url(pics/box-2-3.jpg);"></div>
+                                    <p>Home Decor</p>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="grid-image" style="background-image: url(pics/box-2-4.jpg);"></div>
+                                    <p>Cleaning Tools</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-link">
+                            <p>Discover more in Home</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="box-title">
+                    <h2>Deals for every grade</h2>
+                </div>
+                <div class="box-content">
+                    <a href="#">
+                        <div class="box-image" style="background-image: url(pics/box-3.jpg);"></div>
+                        <div class="box-link">
+                            <p>See all deals</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="box-title">
+                    <h2>Fashion trends that you like more</h2>
+                </div>
+                <div class="box-content">
+                    <a href="#">
+                        <div class="box-grid">
+                            <div class="grid-row">
+                                <div class="grid-item">
+                                    <div class="grid-image" style="background-image: url(pics/box-4-1.jpg);"></div>
+                                    <p>Dresses</p>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="grid-image" style="background-image: url(pics/box-4-2.jpg);"></div>
+                                    <p>Knits</p>
+                                </div>
+                            </div>
+                            <div class="grid-row">
+                                <div class="grid-item">
+                                    <div class="grid-image" style="background-image: url(pics/box-4-3.jpg);"></div>
+                                    <p>Jackets</p>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="grid-image" style="background-image: url(pics/box-4-4.jpg);"></div>
+                                    <p>Jewelry</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-link">
+                            <p>Explore more</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== SHOP MENU SECTION 2 ===== -->
+        <div class="shop-menu">
+            <div class="product-box">
+                <div class="box-title">
+                    <h2>Save big on school essentials</h2>
+                </div>
+                <div class="box-content">
+                    <a href="#">
+                        <div class="box-grid">
+                            <div class="grid-row">
+                                <div class="grid-item">
+                                    <div class="grid-image" style="background-image: url(pics/box-5-1.jpg);"></div>
+                                    <p>Backpacks</p>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="grid-image" style="background-image: url(pics/box-5-2.jpg);"></div>
+                                    <p>Electronics</p>
+                                </div>
+                            </div>
+                            <div class="grid-row">
+                                <div class="grid-item">
+                                    <div class="grid-image" style="background-image: url(pics/box-5-3.jpg);"></div>
+                                    <p>Stationary</p>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="grid-image" style="background-image: url(pics/box-5-4.jpg);"></div>
+                                    <p>Fashion</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-link">
+                            <p>See more</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="box-title">
+                    <h2>Top categories in Kitchen appliances</h2>
+                </div>
+                <div class="box-content">
+                    <a href="#">
+                        <div class="box-grid kitchen-grid">
+                            <div class="kitchen-main">
+                                <div class="grid-image large" style="background-image: url(pics/box-6-1.jpg);"></div>
+                                <p>Cooker</p>
+                            </div>
+                            <div class="kitchen-sub">
+                                <div class="grid-item">
+                                    <div class="grid-image small" style="background-image: url(pics/box-6-2.jpg);"></div>
+                                    <p>Coffee</p>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="grid-image small" style="background-image: url(pics/box-6-3.jpg);"></div>
+                                    <p>Pots and ...</p>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="grid-image small" style="background-image: url(pics/box-6-4.jpg);"></div>
+                                    <p>Kettles</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-link">
+                            <p>Explore all products in Kitchen</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="box-title">
+                    <h2>New home arrivals under $50</h2>
+                </div>
+                <div class="box-content">
+                    <a href="#">
+                        <div class="box-grid">
+                            <div class="grid-row">
+                                <div class="grid-item">
+                                    <div class="grid-image" style="background-image: url(pics/box-7-1.jpg);"></div>
+                                    <p>Kitchen & Dining</p>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="grid-image" style="background-image: url(pics/box-7-2.jpg);"></div>
+                                    <p>Home Improvement</p>
+                                </div>
+                            </div>
+                            <div class="grid-row">
+                                <div class="grid-item">
+                                    <div class="grid-image" style="background-image: url(pics/box-7-3.jpg);"></div>
+                                    <p>Décor</p>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="grid-image" style="background-image: url(pics/box-7-4.jpg);"></div>
+                                    <p>Bedding & Bath</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-link">
+                            <p>Shop the latest from Home</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="box-title">
+                    <h2>Shop Fashion for less</h2>
+                </div>
+                <div class="box-content">
+                    <a href="#">
+                        <div class="box-grid">
+                            <div class="grid-row">
+                                <div class="grid-item">
+                                    <div class="grid-image" style="background-image: url(pics/box-8-1.jpg);"></div>
+                                    <p>Jeans under $50</p>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="grid-image" style="background-image: url(pics/box-8-2.jpg);"></div>
+                                    <p>Tops under $25</p>
+                                </div>
+                            </div>
+                            <div class="grid-row">
+                                <div class="grid-item">
+                                    <div class="grid-image" style="background-image: url(pics/box-8-3.jpg);"></div>
+                                    <p>Dresses under $30</p>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="grid-image" style="background-image: url(pics/box-8-4.jpg);"></div>
+                                    <p>Shoes under $50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-link">
+                            <p>See all deals</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ===== TOP PICKS SECTION ===== -->
+        <section class="top-picks-section">
+            <div class="top-picks-container">
+                <h2>Top Picks for Germany</h2>
+                <div class="carousel">
+                    <button class="carousel-arrow left">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="pics/p-1.jpg" alt="Top pick product 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/p-2.jpg" alt="Top pick product 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/p-3.jpg" alt="Top pick product 3">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/p-4.jpg" alt="Top pick product 4">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/p-5.jpg" alt="Top pick product 5">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/p-6.jpg" alt="Top pick product 6">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/p-7.jpg" alt="Top pick product 7">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/p-8.jpg" alt="Top pick product 8">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/p-9.jpg" alt="Top pick product 9">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/p-10.jpg" alt="Top pick product 10">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/p-11.jpg" alt="Top pick product 11">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/p-12.jpg" alt="Top pick product 12">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/p-13.jpg" alt="Top pick product 13">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/p-14.jpg" alt="Top pick product 14">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/p-15.jpg" alt="Top pick product 15">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/p-16.jpg" alt="Top pick product 16">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/p-17.jpg" alt="Top pick product 17">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/p-18.jpg" alt="Top pick product 18">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/p-19.jpg" alt="Top pick product 19">
+                        </div>
+                    </div>
+                    <button class="carousel-arrow right" >
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== BEST SELLERS SECTION ===== -->
+        <section class="top-picks-section">
+            <div class="top-picks-container">
+                <h2>Best Sellers in Books</h2>
+                <div class="carousel">
+                    <button class="carousel-arrow left">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="pics/b-1.jpg" alt="Best seller book 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/b-2.jpg" alt="Best seller book 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/b-3.jpg" alt="Best seller book 3">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/b-4.jpg" alt="Best seller book 4">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/b-5.jpg" alt="Best seller book 5">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/b-6.jpg" alt="Best seller book 6">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/b-7.jpg" alt="Best seller book 7">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/b-8.jpg" alt="Best seller book 8">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/b-9.jpg" alt="Best seller book 9">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/b-10.jpg" alt="Best seller book 10">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/b-11.jpg" alt="Best seller book 11">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/b-12.jpg" alt="Best seller book 12">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/b-13.jpg" alt="Best seller book 13">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/b-14.jpg" alt="Best seller book 14">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/b-15.jpg" alt="Best seller book 15">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/b-16.jpg" alt="Best seller book 16">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/b-17.jpg" alt="Best seller book 17">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/b-18.jpg" alt="Best seller book 18">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pics/b-19.jpg" alt="Best seller book 19">
+                        </div>
+                    </div>
+                    <button class="carousel-arrow right" onclick="scrollRight()">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PERSONALIZED RECOMMENDATIONS ===== -->
+        <div class="personalized-section">
+            <h2>See personalized recommendations</h2>
+            <a href="#" class="signin-link">Sign in</a>
+            <p class="new-customer">New customer? <a href="">Start here.</a></p>
+        </div>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="footer-top">
+            <a href="#navbar-top" class="back-to-top">Back to top</a>
+        </div>
+
+        <!-- ===== FOOTER LINKS ===== -->
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Get to Know Us</h3>
+                <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About Amazon</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Amazon Devices</a></li>
+                    <li><a href="#">Amazon Science</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Make Money with Us</h3>
+                <ul>
+                    <li><a href="#">Sell products on Amazon</a></li>
+                    <li><a href="#">Sell on Amazon Business</a></li>
+                    <li><a href="#">Sell apps on Amazon</a></li>
+                    <li><a href="#">Become an Affiliate</a></li>
+                    <li><a href="#">Advertise Your Products</a></li>
+                    <li><a href="#">Self-Publish with Us</a></li>
+                    <li><a href="#">Host an Amazon Hub</a></li>
+                    <li><a href="#">See More Make Money with Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Amazon Payment Products</h3>
+                <ul>
+                    <li><a href="#">Amazon Business Card</a></li>
+                    <li><a href="#">Shop with Points</a></li>
+                    <li><a href="#">Reload Your Balance</a></li>
+                    <li><a href="#">Amazon Currency Converter</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Let Us Help You</h3>
+                <ul>
+                    <li><a href="#">Amazon and COVID-19</a></li>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Your Orders</a></li>
+                    <li><a href="#">Shipping Rates & Policies</a></li>
+                    <li><a href="#">Returns & Replacements</a></li>
+                    <li><a href="#">Manage Your Content and Devices</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <!-- ===== FOOTER BOTTOM ===== -->
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <a href="/index.html">
+                    <div class="logo"></div>
+                </a>
+            </div>
+
+            <div class="footer-settings">
+                <div class="footer-option language">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>English</span>
+                    <div class="dropdown-arrows">
+                        <i class="fa-solid fa-angle-up"></i>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+
+                <div class="footer-option currency">
+                    <span class="currency-symbol">$</span>
+                    <span>USD - U.S. Dollar</span>
+                </div>
+
+                <div class="footer-option country">
+                    <div class="flag-icon"></div>
+                    <span>Pakistan</span>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
